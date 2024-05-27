@@ -1,0 +1,44 @@
+.ul_li h1::before {
+    content:'';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 0px;
+    height: 2px;
+
+    background-color: black;
+
+    transition: .5s ease;
+}
+.ul_li h1:hover::before{
+    width: 100%;
+}
+
+
+.submenu_maisDesejados{
+    position: absolute;
+    transform: translate(0%, 100%);
+    left: 0;
+    bottom: 0px;
+
+    opacity: 0;
+
+    visibility: hidden;
+    z-index: 1;
+
+    width: 200px;
+    height: 400px;
+
+    background-color: rgba(0, 0, 0, 0.158);
+
+    border-radius: 4px;
+
+    padding: 10px;
+}
+.ul_li:hover .submenu_maisDesejados{
+    opacity: 1;
+    visibility: visible;
+}
