@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar/>
-        <Outlet className={"bg-black"}/>
+        <Outlet/>
       <Footer/>
     </>
   )

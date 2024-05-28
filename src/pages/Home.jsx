@@ -2,7 +2,11 @@
 
 const Home = () => {
   return (
-    <h1>Home</h1>
+    <>
+      <main className="bg-black w-full h-2/3">
+        <h1>EAE CARA</h1>
+      </main>
+    </>
   )
 }
 
