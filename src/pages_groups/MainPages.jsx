@@ -1,8 +1,10 @@
-
+import { Outlet } from "react-router-dom"
 
 const MainPages = () => {
   return (
-    <div>MainPages</div>
+    <>
+      <Outlet/>
+    </>
   )
 }
 
