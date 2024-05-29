@@ -4,6 +4,7 @@ const Header = () => {
   return (
     <header className="bg-white w-full h-1/5 shadow-navbar z-10">
       <div className="w-full h-3/4">
+        <p>eae</p>
       </div>
       <nav className="h-1/4 flex items-end">
         <ul className="w-3/5 mx-auto flex justify-center uppercase font-semibold text-sm font-['Mulish'] relative">
