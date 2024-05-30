@@ -4,13 +4,13 @@ import { PiShoppingCartSimpleBold } from "react-icons/pi";
 
 const Header = () => {
   return (
-    <header className=" bg-white w-full h-1/5 shadow-navbar z-10">
+    <header className="bg-white w-full h-1/5 shadow-navbar z-10">
       <div className=" flex justify-around items-center w-full h-3/4">
-        <a href="#" className="w-24 h-16 bg-gray-400">logo</a>
+        <a href="#" className="w-24 h-12 bg-gray-400">logo</a>
         <div className="searcher relative">
           <input
             type="text"
-            className="bg-gray-100 w-96 rounded-lg focus:outline-none p-2 pl-5"
+            className="bg-gray-100 w-96 rounded-lg focus:outline-none p-2 pl-5 text-gray-500"
             placeholder="Pesquisar ">
            </input>
           <FiSearch className="absolute right-1 top-1/2 p-2 text-3xl bg-gray-800 text-white rounded-lg -translate-y-1/2 cursor-pointer" ></FiSearch >
