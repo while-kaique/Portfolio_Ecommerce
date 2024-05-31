@@ -30,10 +30,10 @@ const Header = () => {
         <div></div>
       </div>
       <nav className="h-1/4 flex items-end">
-        <ul className="w-3/5 mx-auto flex justify-center uppercase font-bold font-['Mulish'] relative">
+        <ul className="w-3/5 mx-auto flex justify-center uppercase font-bold font-['Mulish'] relative z-10">
           <li className="relative ul_li">
             <h1 className="hover:cursor-pointer">Mais Desejados</h1>
-            <div className="submenu_maisDesejados">
+            <div className="submenu_maisDesejados ">
               <ul>
                 <h1>
                   <a href="#">opção 1</a>
