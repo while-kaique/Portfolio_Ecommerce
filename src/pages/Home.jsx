@@ -31,13 +31,13 @@ const Home = () => {
           <input type="radio" name="slide" id="three" className="radio3 hidden" />
 
           <div className="absolute image w-full h-full">
-            <img src="/images/banner1.png" alt="banner" className=" w-full h-full object-cover img-1 "></img>
+            <a href="#"><img src="/images/banner1.png" alt="banner" className=" w-full h-full object-cover img-1 "></img></a>
           </div>
           <div className="absolute image w-full h-full">
-            <img src="/images/banner2.webp" alt="banner" className=" w-full h-full object-cover img-2"></img>
+            <a href="#"><img src="/images/banner2.webp" alt="banner" className=" w-full h-full object-cover img-2"></img></a>
           </div>
           <div className="absolute image w-full h-full">
-            <img src="/images/banner3.webp" alt="banner" className=" w-full h-full object-cover img-3"></img>
+            <a href="#"><img src="/images/banner3.webp" alt="banner" className=" w-full h-full object-cover img-3"></img></a>
           </div>
           <div className="sliders absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex z-10">
             <label htmlFor="one" className="oneLabel absolute -translate-x-1/2 -translate-y-1/2 bottom-0 left-[calc(50%-45px)] h-4 w-4 border-2 border-white rounded-full /// hover:bg-gray-800 hover:cursor-pointer transition-colors " onClick={cantChange}></label>

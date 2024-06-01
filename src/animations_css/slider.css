@@ -1,20 +1,20 @@
-.image > img{
+.image img{
     clip-path: circle(0% at 0% 100%);
 }
 
-.image > img {
+.image img {
     transition: all 1.5s;
 }
-#one:checked ~ .image > .img-1{
+#one:checked ~ .image .img-1{
     clip-path: circle(150% at 0% 100%);
 }
-#two:checked ~ .image > .img-1,
-#two:checked ~ .image > .img-2{
+#two:checked ~ .image .img-1,
+#two:checked ~ .image .img-2{
     clip-path: circle(150% at 0% 100%);
 }
-#three:checked ~ .image > .img-1,
-#three:checked ~ .image > .img-2,
-#three:checked ~ .image > .img-3{
+#three:checked ~ .image .img-1,
+#three:checked ~ .image .img-2,
+#three:checked ~ .image .img-3{
     clip-path: circle(150% at 0% 100%);
 }
 
