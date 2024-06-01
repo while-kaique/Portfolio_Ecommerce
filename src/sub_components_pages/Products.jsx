@@ -31,8 +31,8 @@ const Products = () => {
                         <input className="inp" type="checkbox" name="meninas" id="meninas"> 
                         </input>
                           
-                        <label htmlFor="meninas" className="h-12 block // border-[1px] // hover:cursor-pointer">
-                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto" onClick={()=>{handleIcon(0)}}>
+                        <label htmlFor="meninas" className="h-12 block // border-[1px] // hover:cursor-pointer" onClick={()=>{handleIcon(0)}}>
+                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto">
                             <h1 className="w-2/3 font-bold text-gray-800">Meninas</h1>
                             {close[0] ? <MdOutlineExpandMore/> : <IoRemoveOutline/>}
                           </div>
@@ -99,8 +99,8 @@ const Products = () => {
                         <input className="inp" type="checkbox" name="meninos" id="meninos"> 
                         </input>
                           
-                        <label htmlFor="meninos" className="h-12 block // border-[1px] // hover:cursor-pointer">
-                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto" onClick={()=>{handleIcon(1)}}>
+                        <label htmlFor="meninos" className="h-12 block // border-[1px] // hover:cursor-pointer" onClick={()=>{handleIcon(1)}}>
+                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto">
                             <h1 className="w-2/3 font-bold text-gray-800">Meninos</h1>
                             {close[1] ? <MdOutlineExpandMore/> : <IoRemoveOutline/>}
                           </div>
@@ -167,8 +167,8 @@ const Products = () => {
                         <input className="inp" type="checkbox" name="bebes" id="bebes"> 
                         </input>
                           
-                        <label htmlFor="bebes" className="h-12 block // border-[1px] // hover:cursor-pointer">
-                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto" onClick={()=>{handleIcon(2)}}>
+                        <label htmlFor="bebes" className="h-12 block // border-[1px] // hover:cursor-pointer" onClick={()=>{handleIcon(2)}}>
+                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto">
                             <h1 className="w-2/3 font-bold text-gray-800">Bebês</h1>
                             {close[2] ? <MdOutlineExpandMore/> : <IoRemoveOutline/>}
                           </div>
@@ -235,8 +235,8 @@ const Products = () => {
                         <input className="inp" type="checkbox" name="pijamas" id="pijamas"> 
                         </input>
                           
-                        <label htmlFor="pijamas" className="h-12 block // border-[1px] // hover:cursor-pointer">
-                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto" onClick={()=>{handleIcon(3)}}>
+                        <label htmlFor="pijamas" className="h-12 block // border-[1px] // hover:cursor-pointer" onClick={()=>{handleIcon(3)}}>
+                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto">
                             <h1 className="w-2/3 font-bold text-gray-800">Pijamas</h1>
                             {close[3] ? <MdOutlineExpandMore/> : <IoRemoveOutline/>}
                           </div>
@@ -303,8 +303,8 @@ const Products = () => {
                         <input className="inp" type="checkbox" name="linhas" id="linhas"> 
                         </input>
                           
-                        <label htmlFor="linhas" className="h-12 block // border-[1px] // hover:cursor-pointer">
-                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto" onClick={()=>{handleIcon(4)}}>
+                        <label htmlFor="linhas" className="h-12 block // border-[1px] // hover:cursor-pointer" onClick={()=>{handleIcon(4)}}>
+                          <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto">
                             <h1 className="w-2/3 font-bold text-gray-800">Linhas</h1>
                             {close[4] ? <MdOutlineExpandMore/> : <IoRemoveOutline/>}
                           </div>
