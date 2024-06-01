@@ -53,7 +53,7 @@ const Slider_Main = () => {
 
 
             </div>
-            <div className="banner-2 w-full py-8 h-10 bg-gray-800 flex justify-center items-center ">
+            <div className="banner-2 w-full py-8 h-10 bg-gray-800 flex justify-center items-center font-['Mulish']">
             <div className="container  flex justify-center items-center gap-5">
                 <div className="banner flex justify-center items-center w-72  text-xs gap-2">
                 <div>
