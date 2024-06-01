@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { PiAirplaneTakeoffBold } from "react-icons/pi";
+import { TiArrowSync } from "react-icons/ti";
+import { FaCcMastercard } from "react-icons/fa";
 
 const Slider_Main = () => {
 
@@ -39,10 +42,10 @@ const Slider_Main = () => {
             <div className="absolute image w-full h-full">
                 <a href="#"><img src="/images/banner3.webp" alt="banner" className=" w-full h-full object-cover img-3"></img></a>
             </div>
-            <div className="sliders absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex z-10">
-                <label htmlFor="one" className="oneLabel absolute -translate-x-1/2 -translate-y-1/2 bottom-0 left-[calc(50%-45px)] h-4 w-4 border-2 border-white rounded-full /// hover:bg-gray-800 hover:cursor-pointer transition-colors " onClick={cantChange}></label>
-                <label htmlFor="two" className="twoLabel absolute -translate-x-1/2 -translate-y-1/2 bottom-0 left-[calc(50%)] h-4 w-4 border-2 border-white rounded-full /// hover:bg-gray-800 hover:cursor-pointer transition-colors" onClick={cantChange} ></label>
-                <label htmlFor="three" className="threeLabel absolute -translate-x-1/2 -translate-y-1/2 bottom-0 left-[calc(50%+45px)] h-4 w-4 border-2 border-white rounded-full /// hover:bg-gray-800 hover:cursor-pointer transition-colors" onClick={cantChange} ></label>
+            <div className="sliders absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 flex z-0">
+                <label htmlFor="one" className="oneLabel absolute -translate-x-1/2 -translate-y-1/2 bottom-0 left-[calc(50%-45px)] h-4 w-4 border-2 border-white rounded-full /// hover:bg-gray-800 hover:cursor-pointer transition-colors  z-0" onClick={cantChange}></label>
+                <label htmlFor="two" className="twoLabel absolute -translate-x-1/2 -translate-y-1/2 bottom-0 left-[calc(50%)] h-4 w-4 border-2 border-white rounded-full /// hover:bg-gray-800 hover:cursor-pointer transition-colors z-0" onClick={cantChange} ></label>
+                <label htmlFor="three" className="threeLabel absolute -translate-x-1/2 -translate-y-1/2 bottom-0 left-[calc(50%+45px)] h-4 w-4 border-2 border-white rounded-full /// hover:bg-gray-800 hover:cursor-pointer transition-colors z-0" onClick={cantChange} ></label>
             </div>
 
 
@@ -57,7 +60,7 @@ const Slider_Main = () => {
             <div className="container  flex justify-center items-center gap-5">
                 <div className="banner flex justify-center items-center w-72  text-xs gap-2">
                 <div>
-                    <a href="#">img</a>
+                    <a href="#"><PiAirplaneTakeoffBold className="text-white text-2xl mr-1"/></a>
                 </div>
                 <div>
                     <h4 className="title font-extrabold text-white">Fretes grátis</h4>
@@ -67,7 +70,7 @@ const Slider_Main = () => {
 
             <div className="banner-3 flex justify-center items-center w-72  text-xs gap-2">
                 <div>
-                <a href="#">img</a>
+                <a href="#"><TiArrowSync className="text-white text-2xl mr-1 "/></a>
                 </div>
                 <div>
                 <h4 className="title-9 font-extrabold text-white">Troca grátis</h4>
@@ -76,7 +79,7 @@ const Slider_Main = () => {
                 </div> 
                 <div className="banner-4 flex justify-center items-center w-72 text-xs gap-2">
                     <div>
-                    <a href="#">img</a>
+                    <a href="#"><FaCcMastercard className="text-white text-2xl mr-1  "/></a>
                     </div>
                     <div>
                     <h4 className="title-10 font-extrabold text-white">Parcele sem juros</h4>
