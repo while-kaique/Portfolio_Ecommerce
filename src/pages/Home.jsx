@@ -14,7 +14,7 @@ const Home = () => {
         
         const radio = document.querySelector(`.radio${countRadio}`)
         radio.checked = true
-      }, 5000);
+      }, 7000);
     }
   }, [countRadio, canChange])
 
