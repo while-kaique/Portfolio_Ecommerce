@@ -1,0 +1,36 @@
+.image img{
+    clip-path: circle(0% at 0% 100%);
+}
+
+.image img {
+    transition: all 1.5s;
+}
+#one:checked ~ .image .img-1{
+    clip-path: circle(150% at 0% 100%);
+}
+#two:checked ~ .image .img-1,
+#two:checked ~ .image .img-2{
+    clip-path: circle(150% at 0% 100%);
+}
+#three:checked ~ .image .img-1,
+#three:checked ~ .image .img-2,
+#three:checked ~ .image .img-3{
+    clip-path: circle(150% at 0% 100%);
+}
+
+.sliders label {
+    transition: all .4s;
+}
+#one:checked ~ .sliders .oneLabel{
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    border: 2px solid rgb(218, 218, 218);
+    width: 45px;
+}
+#two:checked ~ .sliders .twoLabel{
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    width: 45px;
+}
+#three:checked ~ .sliders .threeLabel{
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    width: 45px;
+}
