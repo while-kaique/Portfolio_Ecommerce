@@ -32,3 +32,23 @@ input.inp:not(:checked) ~ ul.content{
 div.options:hover a span{
     text-decoration: underline;
 }
+li.optionFilter{
+    position: relative;
+}
+
+li.optionFilter::before{
+    content: '';
+    display: block;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+
+    width: 100%;
+    height: 1px;
+
+    margin: auto;
+
+    z-index: 999;
+    background-color: rgba(172, 172, 172, 0.486);
+}
