@@ -14,6 +14,9 @@ export default {
       },
       boxShadow: {
         'navbar': '1px 2px 20px #000'
+      },
+      backgroundImage: {
+        'productTestImage': 'url("/images/imagem_teste.webp")'
       }
 
     },

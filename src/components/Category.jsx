@@ -19,7 +19,7 @@ const Category = ({category}) => {
             <input className="inp" type="checkbox" name={lowerTitle} id={lowerTitle}> 
             </input>
                 
-            <label htmlFor={lowerTitle} className="h-12 block // border-[1px] border-[rgba(172, 172, 172, 0.486)] // hover:cursor-pointer" onClick={handleIcon}>
+            <label htmlFor={lowerTitle} className="h-12 block // border-[1px] border-[rgba(172, 172, 172, 0.486)] // hover:cursor-pointer" onClick={handleIcon} >
                 <div className="label // flex justify-between items-center // w-4/5 h-full // m-auto">
                 <h1 className="w-2/3 font-bold text-gray-800">{category.title}</h1>
                 {close ? <MdOutlineExpandMore/> : <IoRemoveOutline/>}
@@ -31,7 +31,7 @@ const Category = ({category}) => {
                         return (
                             <li className="optionFilter px-8 h-12 m-auto" key={key}>
                                 <div className="options flex justify-between items-center h-full">
-                                <a className="w-2/3" href={`/infantil/${lowerTitle}/calcas-e-leggings`}><span>{categ}</span></a>
+                                <a className="w-3/4" href={`/infantil/${lowerTitle}/calcas-e-leggings`}><span>{categ}</span></a>
                                 <div className="void"></div>
                                 </div>
                             </li>

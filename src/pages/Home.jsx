@@ -4,7 +4,7 @@ import Products from "../sub_components_pages/Products";
 const Home = () => {
   return (
     <>
-      <main className="h-[200%]">
+      <main className="">
         <Slider_Main/>
         <Products/>
       </main> 
