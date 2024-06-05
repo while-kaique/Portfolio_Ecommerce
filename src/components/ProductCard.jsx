@@ -22,7 +22,7 @@ const ProductCard = ({product}) => {
             </div>
             <section className="info // bg-white w-full // flex flex-col gap-4 justify-center items-center// h-1/4">
                 <h1 className="text-center text-base text-gray-500">{product.title}</h1>
-                <div className="cost flex justify-center gap-5">
+                <div className="cost flex justify-center gap-3">
                     <p className="text-center text-xs font-bold text-gray-900">{`R$ ${product.cost}0`}</p>  
                     <p className="text-center text-xs font-bold text-gray-400">{`${product.parcels}x de R$${maxParcelValue.toFixed(2)}`}</p>  
                 </div>
