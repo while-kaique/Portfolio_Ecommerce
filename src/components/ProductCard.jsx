@@ -12,9 +12,9 @@ const ProductCard = ({product}) => {
   
   return (
     <>
-        <div className="flex flex-col items-center // bg-gray-100 // shadow-md h-96 // grid-rows-1">
+        <div className="flex flex-col items-center // bg-[#F5F1F2] // shadow-md h-96 // grid-rows-1">
             <div className="img // relative // w-5/6 m-auto h-2/3 // bg-productTestImage bg-contain bg-no-repeat">
-                <div className="colorBalls flex flex-col justify-end items-center gap-3 // absolute bottom-0 -right-10 -translate-x-1/2 // h-full w-10 ">
+                <div className="colorBalls flex flex-col justify-end items-center gap-3 // absolute bottom-2 -right-10 -translate-x-1/2 // h-full w-10">
                     {product.colors.map((color, key)=>{
                         return <ColorBall key={key} color={color}/>
                     })}

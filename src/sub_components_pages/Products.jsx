@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 
 const Products = () => {
 
-  const [categories, setCategorias] = useState( /// Vai ser um objeto JSON retornado de uma requisição
+  const [categories] = useState( /// Vai ser um objeto JSON retornado de uma requisição
     [
       {title: 'Meninas', categs: ['Blusas', 'Calças e Leggins',' Casacos e Jaquetas', 'Conjuntos de Verão', 'Conjuntos de Inverno', 'Shorts', 'Saias', 'Vestidos de Verão', 'Vestidos de Inverno']}, 
 
@@ -20,17 +20,17 @@ const Products = () => {
     ]
   )
 
-  const [bestProducts, setBestProducts] = useState(
+  const [bestProducts] = useState(
     [
-      {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: ['yellow-700', 'gray-800']}, 
-      {title: 'Conjunto B', cost: 199.90, parcels: 3, colors: ['red-600', 'orange-800']}, 
-      {title: 'Conjunto C', cost: 29.90, parcels: 6, colors: ['black', 'orange-800']}, 
-      {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: ['yellow-100', 'gray-700']}, 
-      {title: 'Conjunto B', cost: 199.90, parcels: 3, colors: ['red-600', 'green-700']}, 
-      {title: 'Conjunto C', cost: 29.90, parcels: 6, colors: ['black', 'orange-800']}, 
-      {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: ['yellow-700', 'gray-700']}, 
-      {title: 'Conjunto B', cost: 199.90, parcels: 3, colors: ['red-600', 'green-700']}, 
-      {title: 'Conjunto C', cost: 29.90, parcels: 6, colors: ['black', 'orange-400']}, 
+      {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: [{one:'yellow'}, {two:'gray'}]}, 
+      {title: 'Conjunto B', cost: 199.90, parcels: 3, colors: [{one:'red'}, {two:'orange'}]}, 
+      {title: 'Conjunto C', cost: 29.90, parcels: 6, colors: [{one:'black'}, {two:'orange'}]}, 
+      {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: [{one:'yellow'}, {two:'gray'}]}, 
+      {title: 'Conjunto B', cost: 199.90, parcels: 3, colors: [{one:'red'}, {two:'green'}]}, 
+      {title: 'Conjunto C', cost: 29.90, parcels: 6, colors: [{one:'black'}, {two:'orange'}]}, 
+      {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: [{one:'yellow'}, {two:'gray'}]}, 
+      {title: 'Conjunto B', cost: 199.90, parcels: 3, colors: [{one:'red'}, {two:'green'}]}, 
+      {title: 'Conjunto C', cost: 29.90, parcels: 6, colors: [{one:'black'}, {two:'orange'}]}, 
     ]
   )
 
