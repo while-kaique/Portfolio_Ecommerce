@@ -52,3 +52,6 @@ li.optionFilter::before{
     z-index: 999;
     background-color: rgba(172, 172, 172, 0.486);
 }
+li.optionFilter:last-child::before{
+    background: transparent;
+}
