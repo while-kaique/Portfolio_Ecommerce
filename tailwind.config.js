@@ -12,11 +12,10 @@ export default {
       colors: {
         'index-blue': '#00AACE'
       },
-      boxShadow: {
-        'navbar': '1px 2px 20px #000'
-      },
       backgroundImage: {
-        'productTestImage': 'url("/images/imagem_teste.webp")'
+        'productTestImage': 'url("/images/imagem_teste.webp")',
+        'logo_footer1' : 'url("/images/logo_footer1.png")',
+        'logo_footer2' : 'url("/images/logo_footer2.png")',
       }
 
     },

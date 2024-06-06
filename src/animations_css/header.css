@@ -2,4 +2,18 @@
   color: #00AACE;
 }
 
+.icons .user:hover::before, .icons .cart:hover::before{
+  content: '';
+  width: 110%;
+  height: 140%;
+  border-bottom: 2px solid #00AACE;
+  display: block;
+
+  position: absolute; 
+
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
 
