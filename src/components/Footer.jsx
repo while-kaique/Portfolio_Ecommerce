@@ -55,16 +55,16 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col justify-start mt-10 ">
-          <h1 className="text-lg font-bold mb-2">Acompanhe</h1>
+          <h1 className="text-lg font-bold mb-2 ">Acompanhe</h1>
           <ul className="flex flex-col gap-2">
-            <div className="social_links flex // flex-wrap //">
-              <a href="#" className="w-1/3 text-lg">
+            <div className="social_links flex gap-3 //">
+              <a href="#" className="w-1/3 text-3xl">
                 <FaYoutube />
               </a>
-              <a href="#" className="w-1/3 text-lg">
+              <a href="#" className="w-1/3 text-3xl">
                 <FaInstagram />
               </a>
-              <a href="#" className="w-1/3 text-lg">
+              <a href="#" className="w-1/3 text-3xl">
                 <FaSquareFacebook />
               </a>
             </div> 
