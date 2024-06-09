@@ -14,6 +14,7 @@ const ProductCard = ({product}) => {
     <>
         <div className="flex flex-col items-center // bg-[#F5F1F2] // shadow-md h-96 // grid-rows-1">
             <div className="img // relative // w-5/6 m-auto h-2/3 // bg-productTestImage bg-contain bg-no-repeat">
+                    
                 <div className="colorBalls flex flex-col justify-end items-center gap-3 // absolute bottom-2 -right-10 -translate-x-1/2 // h-full w-10">
                     {product.colors.map((color, key)=>{
                         return <ColorBall key={key} color={color}/>
@@ -26,8 +27,11 @@ const ProductCard = ({product}) => {
                     <p className="text-center text-xs font-bold text-gray-900">{`R$ ${product.cost}0`}</p>  
                     <p className="text-center text-xs font-bold text-gray-400">{`${product.parcels}x de R$${maxParcelValue.toFixed(2)}`}</p>  
                 </div>
+
             </section>
+
         </div>
+
     </>
   )
 }
