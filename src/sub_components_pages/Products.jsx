@@ -38,10 +38,21 @@ const Products = () => {
   return (
     <>
         <section className="products">
-            <div className="jorge flex justify-around items-center border-2 border-red-500">
+            <div className="filter box flex justify-around items-center  border-gray-500 ">
                 <div></div>
-                <h1 className="">Lorem ipsum dolor sit amet.</h1>
-                <div className="filter1 bg-black w-10 h-10"></div>
+                <h1 className="text ml-40">Lorem ipsum dolor sit amet.</h1>
+                <div className="filter1 flex items-center w-250 h-20 gap-2 ">
+                  <h3>Categoria:</h3>
+                 <select className="filter-select w-44 h-8 bg-gray-100 rounded-md outline outline-1">
+                     <option value="someOption">opção 1</option>
+                     <option value="someOption">opção 2</option>
+                     <option value="someOption">opção 3</option>
+                     <option value="someOption">opção 4</option>
+                     <option value="someOption">opção 5</option> 
+            
+                 </select>
+                   </div>
+               
             </div>
 
             <div className="kaique // w-[90%] m-auto mt-10 flex justify-center gap-5 // ">
@@ -65,8 +76,11 @@ const Products = () => {
                   })}
                 </div>
             </div>
-
         </section>
+
+      <div className='button w-full h-20 flex justify-center items-center'>
+          <button className="show button bg-green-800 text-white py-2 px-7 mt-16">Mostrar mais</button>
+      </div>
     </>
   )
 }
