@@ -6,7 +6,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import App from './App.jsx'
 
 import CreateAccount from '../src/pages/CreateAccount.jsx'
-import Products from '../src/pages/Products.jsx'
 import Login from './pages/Login.jsx'
 import Home from './pages/Home.jsx'
 
@@ -21,7 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
           <Route element={<MainPages/>}> {/* Apenas páginas que contenham Header e Footer */}
             <Route path="/" element={<Home />}/> {/* Página inicial */}
-            <Route path="/products" element={<Products />}/> {/* Página de produtos */}
           </Route>
 
           {/* Daqui pra baixo, páginas que não contenham obrigatoriamente os dois */}

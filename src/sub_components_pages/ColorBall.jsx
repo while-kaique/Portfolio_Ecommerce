@@ -31,7 +31,7 @@ const ColorBall = ({color}) => {
 }
 
 ColorBall.propTypes = {  
-    color: PropTypes.string,
+    color: PropTypes.object,
 };
 
 export default ColorBall
