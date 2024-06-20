@@ -30,7 +30,7 @@ input.inp:not(:checked) ~ ul.content{
 }
 
 div.options:hover a span{
-    text-decoration: underline;
+    color: black;
 }
 li.optionFilter{
     position: relative;
