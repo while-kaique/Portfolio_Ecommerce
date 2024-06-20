@@ -92,8 +92,8 @@ const Footer = () => {
         </h1>
       </div>
 
-      <div className="lll  flex justify-start items-center ml-10">
-        <h5 className="text-footer flex justify-center items-center text-xs max-w-5xl h-20 text-gray-500">
+      <div className="lll  flex justify-between items-center m-auto w-11/12">
+        <h5 className="text-footer flex justify-center items-center text-xs w-3/4 h-20 text-gray-400">
           Embora raro, os preços poderão variar durante a navegação sem aviso
           prévio. Pode ocorrer divergência entre o preço exibido no detalhe do
           produto e preço apresentado na sacola de compras, por questões
@@ -103,9 +103,9 @@ const Footer = () => {
           3, Centro/SC CEP: 89107- 000.
         </h5>
 
-        <div className="certificados gap-2" >
-          <a href="#" className="cert m-2">certi1</a>
-          <a href="#">certi2</a>
+        <div className="certificados flex" >
+          <a href="#" className="cert m-2"><img src="/images/selo1.png" alt="Selo 1" className="w-16"/></a>
+          <a href="#" className="cert m-2"><img src="/images/selo2.png" alt="Selo 2" className="w-16"/></a>
         </div>
         
       </div>
