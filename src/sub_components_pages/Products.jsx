@@ -79,10 +79,11 @@ const Products = () => {
         </section>
 
       <div className='button w-full h-20 flex justify-center items-center'>
-          <button className="show button bg-green-800 text-white py-2 px-7 mt-16">Mostrar mais</button>
+        <button className="transition ease-in-out delay-150 bg-green-800 hover:-translate-y-1 hover:scale-110  duration-300 text-white py-2 px-7 mt-16">Mostrar mais</button>
       </div>
     </>
   )
 }
 
 export default Products
+
