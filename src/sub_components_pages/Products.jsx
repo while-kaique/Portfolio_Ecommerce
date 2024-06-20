@@ -38,21 +38,21 @@ const Products = () => {
   return (
     <>
         <section className="products">
-            <div className="filter box flex justify-around items-center  border-gray-500 ">
+            <div className="filter box flex justify-between items-center  border-gray-500 w-5/6 m-auto">
                 <div></div>
-                <h1 className="text ml-40">Lorem ipsum dolor sit amet.</h1>
+                <h1 className="text ml-40 text-lg font-medium">Descubra os produtos por ordenação e categoria!</h1>
                 <div className="filter1 flex items-center w-250 h-20 gap-2 ">
-                  <h3>Categoria:</h3>
-                 <select className="filter-select w-44 h-8 bg-gray-100 rounded-md outline outline-1">
-                     <option value="someOption">opção 1</option>
-                     <option value="someOption">opção 2</option>
-                     <option value="someOption">opção 3</option>
-                     <option value="someOption">opção 4</option>
-                     <option value="someOption">opção 5</option> 
-            
-                 </select>
-                   </div>
-               
+                  <h3>Ordenação:</h3>
+
+                  <select className="filter-select // w-44 h-8 // bg-gray-100 // rounded // outline outline-gray-200 outline-1 // text-sm">
+                      <option value="someOption" className="text-xs">Destaques</option>
+                      <option value="someOption" className="text-xs">Menor Preço</option>
+                      <option value="someOption" className="text-xs">Maior Preço</option>
+                      <option value="someOption" className="text-xs">Mais Vendidos</option>
+                      <option value="someOption" className="text-xs">A - Z</option> 
+                      <option value="someOption" className="text-xs">Data de Lançamento</option> 
+                  </select>
+                </div>
             </div>
 
             <div className="kaique // w-[90%] mr-auto ml-6 mt-10 flex justify-center gap-5 // ">
