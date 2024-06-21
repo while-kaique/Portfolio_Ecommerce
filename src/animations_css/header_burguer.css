@@ -1,0 +1,49 @@
+
+@keyframes bar1back {
+    0% {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    100%{
+    }
+}
+@keyframes bar2back {
+    0% {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    100%{
+    }
+}
+
+@keyframes bar1go {
+    0%{
+        top: calc(50% - 5px);
+    }
+    100%{
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+@keyframes bar2go {
+    0%{
+        top: calc(50% + 5px);
+    }
+    100%{
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+.hamburguer.close .bar1{
+    animation: bar1back .3s ease-out forwards;
+}
+.hamburguer.close .bar2{
+    animation: bar2back .3s ease-out forwards;
+}
+.hamburguer.open .bar1{
+    animation: bar1go .3s ease-out forwards;
+}
+.hamburguer.open .bar2{
+    animation: bar2go .3s ease-out forwards;
+}

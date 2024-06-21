@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types';
 
 const ColorBall = ({color}) => {
-  console.log(color)
   var isOne = true
   var colorVariants = {
     blue: 'bg-blue-700',
