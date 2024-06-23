@@ -23,15 +23,12 @@ ul.content{
     overflow: hidden;
 }
 input.inp:checked ~ ul.content{
-    animation: openList forwards .3s ease-in;
+    animation: openList forwards .4s ease-in;
 }
 input.inp:not(:checked) ~ ul.content{
-    animation: closeList forwards .3s ease-out;
+    animation: closeList forwards .4s ease-out;
 }
 
-div.options:hover a span{
-    color: black;
-}
 li.optionFilter{
     position: relative;
 }

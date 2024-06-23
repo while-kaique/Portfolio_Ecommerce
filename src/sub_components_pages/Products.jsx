@@ -56,12 +56,12 @@ const Products = () => {
             </div>
 
             <div className="kaique // w-[90%] mr-auto ml-6 mt-10 flex justify-center gap-5 // ">
-                <div className="filter2 // flex flex-col flex-wrap // w-1/4 // bg-gray-100 h-full">  
+                <div className="filter2 // hidden md:flex flex-col flex-wrap // w-1/4 // bg-gray-100 h-full">  
                   <section className="">
                     <ul className="">
                       {categories.map((category, key)=>{
                         return(
-                          <Category key={key} category={category} />
+                          <Category key={key} category={category} header={false} font={'produtcs'}/>
                         )
                       })}
                     </ul>
