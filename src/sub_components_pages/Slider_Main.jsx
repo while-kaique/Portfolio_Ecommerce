@@ -31,7 +31,6 @@ const Slider_Main = () => {
   return (
     <>
         <div className="slider relative w-screen h-[276px]">
-              {countRadio}
             <input type="radio" name="slide" id="one" className="radio1 hidden" defaultChecked/>
             <input type="radio" name="slide" id="two" className="radio2 hidden" />
             <input type="radio" name="slide" id="three" className="radio3 hidden" />
