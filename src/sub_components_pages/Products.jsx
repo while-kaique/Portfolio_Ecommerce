@@ -22,10 +22,8 @@ const Products = () => {
 
 
   /// PRODUTOS
-  /// PRODUTOS
-  /// PRODUTOS
+  const [hiddenBottom, setHiddenBottom] = useState(false)
   const [productsLimiter, setProductsLimiter] = useState(2)
-
   const [bestProducts] = useState(
     [
       {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: [{one:'yellow'}, {two:'gray'}]}, 
@@ -39,9 +37,13 @@ const Products = () => {
       {title: 'Conjunto C', cost: 29.90, parcels: 6, colors: [{one:'black'}, {two:'orange'}]}, 
     ]
   )
+  /// PRODUTOS
+
 
   function addLimit(){
-    console.log("ADD LIMIT")
+    if ( (productsLimiter + 3) >= (bestProducts.length - 1) ){
+      setHiddenBottom(true)
+    }
     setProductsLimiter(productsLimiter + 3)
   }
 
@@ -101,7 +103,7 @@ const Products = () => {
         </section>
 
       <div className='button w-full h-20 flex justify-center items-center'>
-        <button className="transition ease-out // bg-cyan-500 hover:bg-cyan-700 duration-200 text-white py-2 px-7 mt-16" onClick={addLimit}>Mostrar mais</button>
+        <button className={` transition ease-out // ${hiddenBottom ? 'bg-transparent hover:bg-transparent text-black font-semibold cursor-text' : 'bg-cyan-500 hover:bg-cyan-700'} duration-200 text-white py-2 px-7 mt-16`} onClick={()=>{if(hiddenBottom) {return} else {addLimit()}}}>{hiddenBottom ? 'Não há mais produtos para mostrar...' : 'Mostrar mais'}</button>
       </div>
     </>
   )
