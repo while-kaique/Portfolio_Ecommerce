@@ -20,6 +20,12 @@ const Products = () => {
     ]
   )
 
+
+  /// PRODUTOS
+  /// PRODUTOS
+  /// PRODUTOS
+  const [productsLimiter, setProductsLimiter] = useState(2)
+
   const [bestProducts] = useState(
     [
       {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: [{one:'yellow'}, {two:'gray'}]}, 
@@ -34,15 +40,27 @@ const Products = () => {
     ]
   )
 
+  function addLimit(){
+    console.log("ADD LIMIT")
+    setProductsLimiter(productsLimiter + 3)
+  }
+
+  const getLastRowClass = () => {
+    if ((productsLimiter + 1) % 2 === 1){
+      return 'col-span-2'
+    }
+    return '';
+  };  
+
 
   return (
     <>
         <section className="products">
-            <div className="filter box flex justify-between items-center  border-gray-500 w-5/6 m-auto">
-                <div></div>
-                <h1 className="text ml-40 text-lg font-medium">Descubra os produtos por ordenação e categoria!</h1>
-                <div className="filter1 flex items-center w-250 h-20 gap-2 ">
-                  <h3>Ordenação:</h3>
+            <div className="filter box flex flex-wrap justify-center gap-14 lg:gap-0 items-center  border-gray-500 w-[90%]">
+                <div className="hidden sm:block md:w-1/12 lg:w-1/4 h-2"></div>
+                <h1 className="text-center text-base font-base lg:text-lg w-2/4 md:w-2/4">Descubra os produtos por ordenação e categoria!</h1>
+                <div className="filter1 w-1/4 flex items-center h-20 gap-2 ">
+                  <h3 className="hidden md:inline">Ordenação:</h3>
 
                   <select className="filter-select // w-44 h-8 // bg-gray-100 // rounded // outline outline-gray-200 outline-1 // text-sm">
                       <option value="someOption" className="text-xs">Destaques</option>
@@ -55,7 +73,7 @@ const Products = () => {
                 </div>
             </div>
 
-            <div className="kaique // w-[90%] mr-auto ml-6 mt-10 flex justify-center gap-5 // ">
+            <div className="kaique // w-full md:w-[90%] mx-0 md:mr-auto md:ml-6 mt-10 flex justify-center gap-5 // ">
                 <div className="filter2 // hidden md:flex flex-col flex-wrap // w-1/4 // bg-gray-100 h-full">  
                   <section className="">
                     <ul className="">
@@ -68,18 +86,22 @@ const Products = () => {
                   </section>
                 </div>
 
-                <div className="products w-3/4 grid grid-cols-3 gap-4 grid-rows-3">
+                <div className={`products w-11/12 md:w-3/4 grid gap-4 grid-cols-2 lg:grid-cols-3 md:grid-cols-2 grid-rows-1`}>
                   {bestProducts.map((product, key)=>{
-                    return(
-                      <ProductCard key={key} product={product}/>
-                    )
+                    if (key <= productsLimiter){
+                      if (key === productsLimiter){
+                        return <ProductCard isOdd={getLastRowClass()} key={key} product={product}/>
+                      }
+                      return <ProductCard isOdd={''} key={key} product={product}/>
+                    }
+                    return
                   })}
                 </div>
             </div>
         </section>
 
       <div className='button w-full h-20 flex justify-center items-center'>
-        <button className="transition ease-out // bg-cyan-500 hover:bg-cyan-700 duration-200 text-white py-2 px-7 mt-16">Mostrar mais</button>
+        <button className="transition ease-out // bg-cyan-500 hover:bg-cyan-700 duration-200 text-white py-2 px-7 mt-16" onClick={addLimit}>Mostrar mais</button>
       </div>
     </>
   )
