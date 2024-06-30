@@ -24,7 +24,7 @@ const Products = () => {
   /// PRODUTOS
   const [hiddenBottom, setHiddenBottom] = useState(false)
   const [productsLimiter, setProductsLimiter] = useState(2)
-  const [bestProducts] = useState(
+  const [products] = useState(
     [
       {title: 'Conjunto A', cost: 99.90, parcels: 2, colors: [{one:'yellow'}, {two:'gray'}]}, 
       {title: 'Conjunto B', cost: 199.90, parcels: 3, colors: [{one:'red'}, {two:'orange'}]}, 
@@ -41,7 +41,7 @@ const Products = () => {
 
 
   function addLimit(){
-    if ( (productsLimiter + 3) >= (bestProducts.length - 1) ){
+    if ( (productsLimiter + 3) >= (products.length - 1) ){
       setHiddenBottom(true)
     }
     setProductsLimiter(productsLimiter + 3)
@@ -89,7 +89,7 @@ const Products = () => {
                 </div>
 
                 <div className={`products w-11/12 md:w-3/4 grid gap-4 grid-cols-2 lg:grid-cols-3 md:grid-cols-2 grid-rows-1`}>
-                  {bestProducts.map((product, key)=>{
+                  {products.map((product, key)=>{
                     if (key <= productsLimiter){
                       if (key === productsLimiter){
                         return <ProductCard isOdd={getLastRowClass()} key={key} product={product}/>
