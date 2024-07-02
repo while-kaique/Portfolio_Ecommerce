@@ -14,6 +14,7 @@ export default {
       },
       backgroundImage: {
         'productTestImage': 'url("/images/imagem_teste.webp")',
+        'productTestImage2': 'url("/images/imagem_teste2.jpeg")',
         'logo_footer1' : 'url("/images/logo_footer1.png")',
         'logo_footer2' : 'url("/images/logo_footer2.png")',
       }

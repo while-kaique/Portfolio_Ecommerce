@@ -29,15 +29,17 @@ const ProductCard = ({product, isOdd}) => {
       
   return (
     <div className={`${screenWidth <= 1024 ? isOdd : ''}`}>
-        <div className={`flex flex-col items-center // bg-[#F5F1F2] // shadow-md h-72 sm:h-96 // grid-rows-1`}>
-            <div className="img // relative // w-5/6  h-4/6 sm:h-3/5 md:h-2/3 // bg-productTestImage bg-contain bg-no-repeat bg-center">
+        <div className={`flex flex-col items-center group // bg-[#F5F1F2] // shadow-md h-72 sm:h-96 // grid-rows-1`}>
+            <div className="img  // relative // w-5/6  h-4/6 sm:h-3/5 md:h-2/3 //  bg-productTestImage hover:bg-productTestImage2 bg-contain bg-no-repeat bg-center">
+                  
                 <div className="colorBalls flex flex-col justify-end items-center gap-3 // absolute bottom-2 -right-10 -translate-x-1/2 // h-full w-10">
                     {product.colors.map((color, key)=>{
                         return <ColorBall key={key} color={color}/>
                     })}
                 </div>
             </div>
-            <section className="info // bg-white w-full // flex flex-col gap-4 justify-center items-center// h-2/6 sm:h-2/5 md:h-1/3">
+            <section className="info  relative // bg-white w-full // flex flex-col gap-4 justify-center items-center// h-2/6 sm:h-2/5 md:h-1/3">
+                <a href="#"><button className='w-32 h-10 bg-green-400 hover:bg-green-600 text-white absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 ease-out duration-300'>Comprar</button></a>
                 <h1 className="text-center text-base text-gray-500">{product.title}</h1>
                 <div className="cost flex justify-center gap-3">
                     <p className="text-center text-xs font-bold text-gray-900">{`R$ ${product.cost}0`}</p>  
