@@ -30,7 +30,7 @@ const ProductCard = ({product, isOdd}) => {
   return (
     <div className={`${screenWidth <= 1024 ? isOdd : ''}`}>
         <div className={`flex flex-col items-center group // bg-[#F5F1F2] // shadow-md h-72 sm:h-96 // grid-rows-1`}>
-            <div className="img  // relative // w-5/6  h-4/6 sm:h-3/5 md:h-2/3 //  bg-productTestImage hover:bg-productTestImage2 bg-contain bg-no-repeat bg-center">
+            <div className="img  // relative // w-5/6  h-4/6 sm:h-3/5 md:h-2/3 //  bg-productTestImage group-hover:bg-productTestImage2 bg-contain bg-no-repeat bg-center">
                   
                 <div className="colorBalls flex flex-col justify-end items-center gap-3 // absolute bottom-2 -right-10 -translate-x-1/2 // h-full w-10">
                     {product.colors.map((color, key)=>{
