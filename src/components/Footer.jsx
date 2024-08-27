@@ -13,76 +13,75 @@ import { FaJava } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="">
-      <footer className="block justify-center items-center gap-48 // sm:flex sm:justify-between sm:items-center  // w-full h-full  // mt-16 // bg-index-blue // text-sm text-white">
-        <div className="flex flex-col justify-start mt-10 ml-5 //   sm:ml-9  ">
-          <h1 className="text-lg font-bold mb-4 mt-5">Institucional</h1>
-          <ul className="flex flex-col gap-1">
-            <a href="#">
-              <li>Quem Somos</li>
-            </a>
-            <a href="#">
-              <li>Privacidade e dados pessoais</li>
-            </a>
-            <a href="#">
-              <li>Central de Atendimento</li>
-            </a>
-            <a href="#">
-              <li>Troca e devolução</li>
-            </a>
-            <a href="#">
-              <li>Tempo de entrega</li>
-            </a>
-            <a href="#">
-              <li>Política de pagamento</li>
-            </a>
-          </ul>
-        </div>
-         <hr className="hh mt-10"></hr> 
-        <div className="flex flex-col justify-start  mt-10 ml-5 // sm:ml-0">
-          <h1 className="text-lg font-bold mb-4">Institucional</h1>
-          <ul className="flex flex-col gap-2">
-            <a href="#" className="flex items-center h-5">
-              <FaWhatsapp className="text-xl // mr-1" />
-              <li>(99)999999999</li>
-            </a>
-            <a href="#">
-              <li>9999 999 9999</li>
-            </a>
-            <a href="#">
-              <li>sac@suaempresa.com</li>
-            </a>
-            <h1>De segunda-feira a sexta-feira:</h1>
-            <h1 className="font-bold">8h às 12h e 13h às 17:30</h1>
-          </ul>
-        </div>
-        <hr className="hh mt-10"></hr> 
-        <div className="flex flex-col justify-start mt-10 ml-5 // sm:ml-0">
-          <h1 className="text-lg font-bold mb-2 ">Acompanhe</h1>
-          <ul className="flex flex-col gap-2">
-            <div className="social_links flex">
-              <a href="#" className="w-10 text-3xl sm:w-1/3">
-                <FaYoutube />
+      <div className="ft bg-index-blue">
+        <footer className="block justify-center items-center gap-48 // sm:flex sm:justify-between sm:items-center  // w-10/12 mx-auto h-full  // mt-16 // bg-index-blue // text-sm text-white">
+          <div className="flex flex-col justify-start mt-10 ml-5 //   sm:ml-9  ">
+            <h1 className="text-lg font-bold mb-4 mt-5">Institucional</h1>
+            <ul className="flex flex-col gap-1">
+              <a href="#">
+                <li>Quem Somos</li>
               </a>
-              <a href="#" className="w-10 text-3xl sm:w-1/3">
-                <FaInstagram />
+              <a href="#">
+                <li>Privacidade e dados pessoais</li>
               </a>
-              <a href="#" className="w-10 text-3xl sm:w-1/3">
-                <FaSquareFacebook />
+              <a href="#">
+                <li>Central de Atendimento</li>
               </a>
-            </div>
-          </ul>
-        </div>
-        <hr className="hh mt-10"></hr> 
-        <div className="flex flex-col justify-start mt-10 ml-5 // sm:ml-0">
-          <h1 className="text-lg font-bold mb-4 text-start // sm:text-start">Compre Seguro</h1>
-          <ul className="flex gap-5 // sm:flex-wrap sm:justify-center sm:items-center">
-            <FaCcVisa className="w-10 text-4xl mb-4" />
-            <SiAmericanexpress className="w-10 text-4xl mb-4" />
-            <FaCcMastercard className="w-10 text-4xl" />
-            <SiPagseguro className="w-10 text-4xl" />
-          </ul>
-        </div>
-      </footer>
+              <a href="#">
+                <li>Troca e devolução</li>
+              </a>
+              <a href="#">
+                <li>Tempo de entrega</li>
+              </a>
+              <a href="#">
+                <li>Política de pagamento</li>
+              </a>
+            </ul>
+          </div>
+          <div className="flex flex-col justify-start  mt-10 ml-5 // sm:ml-0">
+            <h1 className="text-lg font-bold mb-4">Institucional</h1>
+            <ul className="flex flex-col gap-2">
+              <a href="#" className="flex items-center h-5">
+                <FaWhatsapp className="text-xl // mr-1" />
+                <li>(99)999999999</li>
+              </a>
+              <a href="#">
+                <li>9999 999 9999</li>
+              </a>
+              <a href="#">
+                <li>sac@suaempresa.com</li>
+              </a>
+              <h1>De segunda-feira a sexta-feira:</h1>
+              <h1 className="font-bold">8h às 12h e 13h às 17:30</h1>
+            </ul>
+          </div>
+          <div className="flex flex-col justify-start mt-10 ml-5 // sm:ml-0">
+            <h1 className="text-lg font-bold mb-2 ">Acompanhe</h1>
+            <ul className="flex flex-col gap-2">
+              <div className="social_links flex">
+                <a href="#" className="w-10 text-3xl sm:w-1/3">
+                  <FaYoutube />
+                </a>
+                <a href="#" className="w-10 text-3xl sm:w-1/3">
+                  <FaInstagram />
+                </a>
+                <a href="#" className="w-10 text-3xl sm:w-1/3">
+                  <FaSquareFacebook />
+                </a>
+              </div>
+            </ul>
+          </div>
+          <div className="flex flex-col justify-start mt-10 ml-5 // sm:ml-0">
+            <h1 className="text-lg font-bold mb-4 text-start // sm:text-start">Compre Seguro</h1>
+            <ul className="flex gap-4 // sm:flex-wrap sm:justify-center sm:items-center">
+              <FaCcVisa className="w-10 text-4xl" />
+              <SiAmericanexpress className="w-10 text-4xl" />
+              <FaCcMastercard className="w-10 text-4xl" />
+              <SiPagseguro className="w-10 text-4xl" />
+            </ul>
+          </div>
+        </footer>
+      </div>
 
       <div className="sub_footer // flex flex-wrap justify-start items-start //sm:justify-center sm:items-center// gap-x-20 // w-full // bg-index-blue // text-sm text-white // sm:justify-center ">
         <FaReact className="text-[70px]" />
